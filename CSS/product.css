@@ -1,0 +1,290 @@
+/* all elements */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+
+body{
+    overflow-x: hidden;
+    font-family: "Ubuntu",sans-serif;
+    
+}
+h1,h2{
+    font-family: "Crimson Text", serif;
+    font-size: 2.5rem;
+text-decoration: underline;
+
+}
+/* Header section */
+
+#intro-video{
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+height: 80%;
+width: 100vw;
+object-fit: cover;
+z-index: -1;
+}
+#nav-bar{
+    position: sticky;
+}
+
+#header-img{
+    height: 5rem;
+    width: 8rem;
+    margin-left: 3rem;
+top: 0;
+position: fixed;
+
+}
+
+#openmenu{
+    display: none;
+    /* cursor: pointer;
+    margin: 20px;
+    font-size: 2rem;
+    position: absolute;
+bottom: 1.2rem;
+right: 4rem; */
+}
+#mainmenu{
+    display: inline-flex;
+flex-direction: row;
+position: absolute;
+bottom: 4rem;
+right: 4rem;
+padding: 0;
+margin: 0;
+
+}
+#closemenu{
+    display: none;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.nav-link{
+    text-decoration:none;
+color: wheat;
+}
+
+li{
+    list-style: none;
+    margin: .2rem;
+
+}
+
+.cafe-name{
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 9rem;
+color: wheat;
+text-decoration: none;
+}
+
+span{
+    text-decoration: underline;
+}
+
+.subtitle{
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: wheat;
+    padding-bottom: 11.8rem;
+    margin: 0;
+}
+
+.nav-link:hover{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+/* feature */
+
+#features{
+    padding: 7% 7%;
+    text-align: center;
+    background-color: wheat;
+    color: rgb(83, 39, 8);
+}
+#features h2{
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.fea-head{
+    font-weight: bold;
+}
+.fea-icon{
+font-size: 3rem;
+padding: 1.5rem;
+}
+.fea-para{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+}
+
+/* video section */
+#video-sec{
+    text-align: center;
+background-color: rgb(110, 52, 11);
+color: wheat;
+padding-top: 7% ;
+padding-bottom: 7% ;
+
+}
+#video-sec h2{
+    text-decoration: underline;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+
+}
+video{
+    width: 50%;
+}
+/* section menu */
+#menu{
+   
+    background-color: wheat;
+    color: rgb(83, 39, 8);
+    padding-bottom: 3rem;
+    
+}
+#menu h2{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+#the-list{
+    padding-left: 8rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* feedback */
+#feedback{
+    background-color: rgb(83, 39, 8); ;
+    padding: 6% 7%;
+    text-align: center;
+    color: wheat;
+}
+#feedback h2{
+    padding-bottom: 6%;
+}
+
+.feed-img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.test-head{
+    margin: 2rem;
+}
+    
+/* form */
+
+form{
+    padding: 5% 7%;
+    text-align: center;
+    color: rgb(83, 39, 8);
+
+        background-color:wheat   ;
+}
+
+input{
+    display: inline-block;
+    margin: 1.2rem;
+    margin-bottom: 0rem;
+    
+}
+#email{
+    border: 2px solid rgb(83, 39, 8);
+    padding: .3rem;
+}
+#submit{
+    background-color: rgb(83, 39, 8); 
+    color: wheat;
+    padding: .3rem;
+    border-radius: 5px;
+}
+/* footer */
+footer{
+    background-color: rgb(83, 39, 8); 
+    font-size: 1rem;
+    text-align: center;
+}
+footer a{
+    color: wheat;
+
+}
+footer i{
+    margin: auto .6rem;
+    cursor: pointer;
+}
+/* media query */
+@media (max-width:610px){
+    .cafe-name{
+        font-size: 3rem;
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+    #mainmenu{
+        height: 40%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #865439;
+        color: wheat;
+        transition: top 1s ease;
+        display: none;
+    }
+
+     #closemenu{
+        display: block;
+
+        
+    }
+    #openmenu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 5.5rem;
+        font-size: 1.2rem;
+        color: wheat;
+    }
+    #openmenu:hover{
+        color: white;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #the-list{
+        grid-template-columns: 50% 50%;
+        line-height: 2;
+        padding-left: 2rem;
+    }
+    .extra{
+        display: none;
+    }
+    .fea-para{
+        padding-bottom: 1.5rem
+        ;
+    }
+}
